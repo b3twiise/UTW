@@ -1,0 +1,19 @@
+```The password for Century5 is the name of the file within a directory on the desktop that has spaces in its name. ```
+
+
+dir "Can You Open Me"                                                                                   
+                                                                                                                                      
+                                                                                                                                      
+    Directory: C:\Users\century4\Desktop\Can You Open Me                                                                              
+                                                                                                                                      
+                                                                                                                                      
+Mode                LastWriteTime         Length Name                                                                                 
+----                -------------         ------ ----                                                                                 
+-a----        8/30/2018   3:29 AM             24 61580                                                                                
+                                                                                                                                      
+                                                                                                                                      
+PS C:\Users\century4\Desktop> (get-childitem("Can You Open Me").name                                                                  
+>>                                                                                                                                    
+PS C:\Users\century4\Desktop> (get-childitem("Can You Open Me")).name                                                                 
+61580                                                                                                                                 
+PS C:\Users\century4\Desktop>  

@@ -1,0 +1,22 @@
+```The password for Century10 is the 161st word within the file on the desktop. ```
+
+                                                                                                                              
+PS C:\Users\century9\Desktop> (get-content .\Word_File.txt).split(" ")[1]                                                             
+epibole                                                                                                                               
+PS C:\Users\century9\Desktop> (get-content .\Word_File.txt).split(" ").Length                                                         
+200                                                                                                                                   
+PS C:\Users\century9\Desktop> (get-content .\Word_File.txt).split(" ").[160]                                                          
+At line:1 char:43                                                                                                                     
++ (get-content .\Word_File.txt).split(" ").[160]                                                                                      
++                                           ~                                                                                         
+Missing type name after '['.                                                                                                          
+At line:1 char:42                                                                                                                     
++ (get-content .\Word_File.txt).split(" ").[160]                                                                                      
++                                          ~                                                                                          
+Missing property name after reference operator.                                                                                       
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException                                                 
+    + FullyQualifiedErrorId : MissingTypename                                                                                         
+                                                                                                                                      
+PS C:\Users\century9\Desktop> (get-content .\Word_File.txt).split(" ")[160]                                                           
+pierid                                                                                                                                
+PS C:\Users\century9\Desktop>                 

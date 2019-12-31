@@ -1,0 +1,9 @@
+
+DESCRIPTION                                                                                                                           
+    The Invoke-Expression cmdlet evaluates or runs a specified string as a command and returns the results of the expression or       
+    command. Without Invoke-Expression , a string submitted at the command line would be returned (echoed) unchanged.   
+
+  PS C:\Users\century3\documents> $outres = invoke-expression("dir ../Desktop")                                                         
+PS C:\Users\century3\documents> echo $outres.Length                                                                                   
+123                                                                                                                                   
+PS C:\Users\century3\documents>

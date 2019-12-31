@@ -1,0 +1,5 @@
+```The password for Century12 is the name of the hidden file within the contacts, desktop, documents, downloads, favorites, music, or videos folder in the user's profile. ```
+
+PS C:\Users\century11\documents> get-childitem .. -Recurse  -Hidden  
+PS C:\Users\century11\documents> cat C:\Users\century11\Downloads\secret_sauce                                                        
+Congratulations. You found it!  

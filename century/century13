@@ -1,0 +1,4 @@
+ ```The password for Century14 is the number of words within the file on the desktop.```
+ PS C:\Users\century13\Desktop> (get-content .\countmywords).split(" ").Length                                                         
+ 755                                                                                                                                   
+ PS C:\Users\century13\Desktop>  

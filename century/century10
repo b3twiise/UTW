@@ -1,0 +1,43 @@
+```The password for Century11 is the 10th and 8th word of the Windows Update service description combined PLUS the name of the file on the desktop.
+``
+
+https://ss64.com/ps/get-service.html
+
+get-wmiobject win32_service | where-object {$_.Name -eq 'wuauserv'} | format-list Name, Description
+
+
+
+PS C:\Users\century10\documents> (get-service -displayname "windows update").description                                              
+PS C:\Users\century10\documents> (get-service -displayname "windows update")                                                          
+                                                                                                                                      
+Status   Name               DisplayName                                                                                               
+------   ----               -----------                                                                                               
+Stopped  wuauserv           Windows Update                                                                                            
+                                                                                                                                      
+                                                                                                                                      
+PS C:\Users\century10\documents> get-wmiobject win32_service | where-object {$_.Name -eq 'wuauserv'} | format-list Name, Description  
+                                                                                                                                      
+                                                                                                                                      
+Name        : wuauserv                                                                                                                
+Description : Enables the detection, download, and installation of updates for Windows and other programs. If this service is         
+              disabled, users of this computer will not be able to use Windows Update or its automatic updating feature, and          
+              programs will not be able to use the Windows Update Agent (WUA) API.                                                    
+                                                                                                                                      
+                                                                                                                                      
+                                                                                                                                      
+PS C:\Users\century10\documents> 
+
+PS C:\Users\century10\documents> dir ..\Desktop                                                                                       
+                                                                                                                                      
+                                                                                                                                      
+    Directory: C:\Users\century10\Desktop                                                                                             
+                                                                                                                                      
+                                                                                                                                      
+Mode                LastWriteTime         Length Name                                                                                 
+----                -------------         ------ ----                                                                                 
+-a----        8/30/2018   3:34 AM             43 110                                                                                  
+                                                                                                                                      
+                                                                                                                                      
+PS C:\Users\century10\documents>   updates + windows + 110
+
+windowsupdates110

@@ -1,0 +1,24 @@
+```The password for Century8 is in a readme file somewhere within the contacts, desktop, documents, downloads, favorites, music, or videos folder in the user's profile.
+```
+
+S C:\Users\century7\documents> get-childItem -Recurse -Path ".." | select-String "ead"                                               
+PS C:\Users\century7\documents> get-childItem -Recurse -Path ".." | select-content                                                    
+PS C:\Users\century7\documents>                                                                                                       
+PS C:\Users\century7\documents> get-childItem -Recurse -Path ".." | select-String -pattern "ead"                                      
+PS C:\Users\century7\documents> get-childItem -Recurse -Path ".." | select-String -pattern ead                                        
+PS C:\Users\century7\documents> get-childItem -Recurse -Path ".." | select-String ead                                                 
+PS C:\Users\century7\documents> get-childItem -Recurse -Path ".." | select-string  -pattern ead                                       
+PS C:\Users\century7\documents> get-childItem -Recurse -Path ".." | select-string  -pattern txt                                       
+PS C:\Users\century7\documents>    
+
+
+
+
+
+
+None of the above worked
+
+
+PS C:\Users\century7\documents> cat ../Downloads/Readme.txt                                                                           
+7points                                                                                                                               
+PS C:\Users\century7\documents>   

@@ -1,0 +1,13 @@
+```The password for Century6 is the short name of the domain in which this system resides in PLUS the name of the file on the desktop.```
+
+
+
+                                                                                                                                     
+Under the Wire... PowerShell Training for the People!                                                                                 
+PS C:\Users\century5\documents> dir                                                                                                   
+PS C:\Users\century5\documents> (Get-ADDomain).name   + (get-childitem "../Desktop").name                                             
+underthewire3347                                                                                                                      
+PS C:\Users\century5\documents> 
+
+
+
