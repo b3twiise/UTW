@@ -191,7 +191,21 @@ whenCreated                          : 1/26/2019 8:40:06 AM
                                                                   
 
 
+S C:\Users\century12\documents> dir ..\Desktop                                                                                       
+                                                                                                                                      
+                                                                                                                                      
+    Directory: C:\Users\century12\Desktop                                                                                             
+                                                                                                                                      
+                                                                                                                                      
+Mode                LastWriteTime         Length Name                                                                                 
+----                -------------         ------ ----                                                                                 
+-a----        8/30/2018   3:34 AM             30 _things                                                                              
+                                                                                                                                      
+                                                                                                                                      
+PS C:\Users\century12\documents>  
 
 
+                         Description                          : i_authenticate_things  
 
-                                                                  Description                          : i_authenticate                                                                                 
+
+                         i_authenticate30_things                                                                            

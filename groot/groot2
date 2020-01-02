@@ -1,0 +1,52 @@
+``` The password for groot2 is the last five alphanumeric characters of the MD5 hash of this system's hosts file. ```
+
+#################################################################################################
+## hunt for etc/hosts in windows
+##################################################################################################
+
+
+
+PS C:\Users\Groot1\documents> get-childitem -Recurs -Path C:\ -filter "*hosts" -ErrorAction SilentlyContinue                          
+                                                                                                                                      
+                                                                                                                                      
+    Directory: C:\Windows\System32\drivers\etc                                                                                        
+                                                                                                                                      
+                                                                                                                                      
+Mode                LastWriteTime         Length Name                                                                                 
+----                -------------         ------ ----                                                                                 
+-a----         9/3/2018  11:01 PM            865 hosts                                                                                
+                                                                                                                                      
+                                                                                                                                      
+    Directory: C:\Windows\WinSxS\amd64_microsoft-windows-w..ucture-other-minwin_31bf3856ad364e35_10.0.14393.0_none_62b408f17bc49699   
+                                                                                                                                      
+                                                                                                                                      
+Mode                LastWriteTime         Length Name                                                                                 
+----                -------------         ------ ----                                                                                 
+-a----        7/16/2016   1:18 PM            824 hosts                                                                                
+                                                                                                                                      
+                                                                                                                                      
+PS C:\Users\Groot1\documents>
+
+
+#################################################################################################
+## get its md5hash
+##################################################################################################
+
+PS C:\Users\Groot1\documents> get-filehash -algorithm md5 C:\Windows\System32\drivers\etc\hosts                                       
+                                                                                                                                      
+Algorithm       Hash                                                                   Path                                           
+---------       ----                                                                   ----                                           
+MD5             6EEC08310BD5328FFC8FB72CD8E464C3                                       C:\Windows\System32\drivers\etc\hosts          
+                                                                                                                                      
+                                                                                                                                      
+PS C:\Users\Groot1\documents> 
+
+
+#################################################################################################
+## get last 5 of hash
+##################################################################################################
+PS C:\Users\Groot1\documents> $length = (get-filehash -algorithm md5 C:\Windows\System32\drivers\etc\hosts).hash.length               
+PS C:\Users\Groot1\documents> (get-filehash -algorithm md5 C:\Windows\System32\drivers\etc\hosts).hash.substring($length-5)           
+464C3  
+464c3                                                                                                                               
+PS C:\Users\Groot1\documents>

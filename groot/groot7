@@ -1,0 +1,89 @@
+                                                                                                                                     
+PS C:\Users\Groot6\documents> get-ciminstance win32_startupCommand | select-object name, command, location, user | fl                 
+                                                                                                                                      
+                                                                                                                                      
+name     : New Value #1                                                                                                               
+command  :                                                                                                                            
+location : HKU\S-1-5-21-758131494-606461608-3556270690-1169\SOFTWARE\Microsoft\Windows\CurrentVersion\Run                             
+user     : underthewire\Groot6                                                                                                        
+                                                                                                                                      
+name     : New Value #2                                                                                                               
+command  :                                                                                                                            
+location : HKU\S-1-5-21-758131494-606461608-3556270690-1169\SOFTWARE\Microsoft\Windows\CurrentVersion\Run                             
+user     : underthewire\Groot6                                                                                                        
+                                                                                                                                      
+name     : New Value #3                                                                                                               
+command  :                                                                                                                            
+location : HKU\S-1-5-21-758131494-606461608-3556270690-1169\SOFTWARE\Microsoft\Windows\CurrentVersion\Run                             
+user     : underthewire\Groot6                                                                                                        
+                                                                                                                                      
+name     : New Value #4                                                                                                               
+command  :                                                                                                                            
+location : HKU\S-1-5-21-758131494-606461608-3556270690-1169\SOFTWARE\Microsoft\Windows\CurrentVersion\Run                             
+user     : underthewire\Groot6                                                                                                        
+                                                                                                                                      
+name     : star-lord                                                                                                                  
+command  : C:\star-lord.exe                                                                                                           
+location : HKU\S-1-5-21-758131494-606461608-3556270690-1169\SOFTWARE\Microsoft\Windows\CurrentVersion\Run                             
+user     : underthewire\Groot6                                                                                                        
+                                                                                                                                      
+                                                                                                                                      
+                                                                                                                                      
+PS C:\Users\Groot6\documents> get-ciminstance win32_startupCommand                                                                    
+                                                                                                                                      
+Command          User                Caption                                                                                          
+-------          ----                -------                                                                                          
+                 underthewire\Groot6 New Value #1                                                                                     
+                 underthewire\Groot6 New Value #2                                                                                     
+                 underthewire\Groot6 New Value #3                                                                                     
+                 underthewire\Groot6 New Value #4                                                                                     
+C:\star-lord.exe underthewire\Groot6 star-lord                                                                                        
+                                                                                                                                      
+                                                                                                                                      
+PS C:\Users\Groot6\documents> get-ciminstance win32_startupCommand | select-object name, command, location, user | fl                 
+                                                                                                                                      
+                                                                                                                                      
+name     : New Value #1                                                                                                               
+command  :                                                                                                                            
+location : HKU\S-1-5-21-758131494-606461608-3556270690-1169\SOFTWARE\Microsoft\Windows\CurrentVersion\Run                             
+user     : underthewire\Groot6                                                                                                        
+                                                                                                                                      
+name     : New Value #2                                                                                                               
+command  :                                                                                                                            
+location : HKU\S-1-5-21-758131494-606461608-3556270690-1169\SOFTWARE\Microsoft\Windows\CurrentVersion\Run                             
+user     : underthewire\Groot6                                                                                                        
+                                                                                                                                      
+name     : New Value #3                                                                                                               
+command  :                                                                                                                            
+location : HKU\S-1-5-21-758131494-606461608-3556270690-1169\SOFTWARE\Microsoft\Windows\CurrentVersion\Run                             
+user     : underthewire\Groot6                                                                                                        
+                                                                                                                                      
+name     : New Value #4                                                                                                               
+command  :                                                                                                                            
+location : HKU\S-1-5-21-758131494-606461608-3556270690-1169\SOFTWARE\Microsoft\Windows\CurrentVersion\Run                             
+user     : underthewire\Groot6                                                                                                        
+                                                                                                                                      
+name     : star-lord                                                                                                                  
+command  : C:\star-lord.exe                                                                                                           
+location : HKU\S-1-5-21-758131494-606461608-3556270690-1169\SOFTWARE\Microsoft\Windows\CurrentVersion\Run                             
+user     : underthewire\Groot6                                                                                                        
+                                                                                                                                      
+                                                                                                                                      
+                                                                                                                                      
+PS C:\Users\Groot6\documents>    
+
+PS C:\Users\Groot6\documents> dir ..\Desktop                                                                                          
+                                                                                                                                      
+                                                                                                                                      
+    Directory: C:\Users\Groot6\Desktop                                                                                                
+                                                                                                                                      
+                                                                                                                                      
+Mode                LastWriteTime         Length Name                                                                                 
+----                -------------         ------ ----                                                                                 
+-a----        8/30/2018  10:51 AM              0 _rules                                                                               
+                                                                                                                                      
+                                                                                                                                      
+PS C:\Users\Groot6\documents>  
+
+
+star-lord_rules

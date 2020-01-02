@@ -1,0 +1,60 @@
+```The password for cyborg13 is the first four characters of the base64 encoded fullpath to the file that started the i_heart_robots service PLUS the name of the file on the desktop. 
+
+
+                                                                                                                                     
+PS C:\Users\cyborg12\documents> get-service i_heart_robots -DependentServices                                                         
+PS C:\Users\cyborg12\documents> Get-WmiObject -Class Win32_Service -Filter "Name='i_heart_robots'" | Select-Object *                  
+                                                                                                                                      
+                                                                                                                                      
+PSComputerName          : UTW                                                                                                         
+Name                    : i_heart_robots                                                                                              
+Status                  : OK                                                                                                          
+ExitCode                : 1077                                                                                                        
+DesktopInteract         : False                                                                                                       
+ErrorControl            : Normal                                                                                                      
+PathName                : c:\windows\system32\cmd.exe                                                                                 
+ServiceType             : Own Process                                                                                                 
+StartMode               : Disabled                                                                                                    
+__GENUS                 : 2                                                                                                           
+__CLASS                 : Win32_Service                                                                                               
+__SUPERCLASS            : Win32_BaseService                                                                                           
+__DYNASTY               : CIM_ManagedSystemElement                                                                                    
+__RELPATH               : Win32_Service.Name="i_heart_robots"                                                                         
+__PROPERTY_COUNT        : 26                                                                                                          
+__DERIVATION            : {Win32_BaseService, CIM_Service, CIM_LogicalElement, CIM_ManagedSystemElement}                              
+__SERVER                : UTW                                                                                                         
+__NAMESPACE             : root\cimv2                                                                                                  
+__PATH                  : \\UTW\root\cimv2:Win32_Service.Name="i_heart_robots"                                                        
+AcceptPause             : False                                                                                                       
+AcceptStop              : False                                                                                                       
+Caption                 : i_heart_robots                                                                                              
+CheckPoint              : 0                                                                                                           
+CreationClassName       : Win32_Service                                                                                               
+DelayedAutoStart        : False                                                                                                       
+Description             : I be lovin some metal bots!                                                                                 
+DisplayName             : i_heart_robots                                                                                              
+InstallDate             :                                                                                                             
+ProcessId               : 0                                                                                                           
+ServiceSpecificExitCode : 0                                                                                                           
+Started                 : False                                                                                                       
+StartName               : LocalSystem                                                                                                 
+State                   : Stopped                                                                                                     
+SystemCreationClassName : Win32_ComputerSystem                                                                                        
+SystemName              : UTW                                                                                                         
+TagId                   : 0                                                                                                           
+WaitHint                : 0                                                                                                           
+Scope                   : System.Management.ManagementScope                                                                           
+Path                    : \\UTW\root\cimv2:Win32_Service.Name="i_heart_robots"                                                        
+Options                 : System.Management.ObjectGetOptions                                                                          
+ClassPath               : \\UTW\root\cimv2:Win32_Service                                                                              
+Properties              : {AcceptPause, AcceptStop, Caption, CheckPoint...}                                                           
+SystemProperties        : {__GENUS, __CLASS, __SUPERCLASS, __DYNASTY...}                                                              
+Qualifiers              : {dynamic, Locale, provider, UUID}                                                                           
+Site                    :                                                                                                             
+Container               :                                                                                                             
+                                                                                                                                      
+b3twiise@phoenix:~$ echo -en "c:\windows\system32\cmd.exe" | base64
+Yzpcd2luZG93c1xzeXN0ZW0zMg==
+
+
+yzpc_heart

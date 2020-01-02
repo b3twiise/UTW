@@ -1,0 +1,133 @@
+PS C:\Users\cyborg5\documents> Get-ADUser -filter "*" -properties "*" | where {$_.logonhours -gt 0}                                   
+                                                                                                                                      
+                                                                                                                                      
+AccountExpirationDate                :                                                                                                
+accountExpires                       : 0                                                                                              
+AccountLockoutTime                   :                                                                                                
+AccountNotDelegated                  : False                                                                                          
+adminCount                           : 1                                                                                              
+AllowReversiblePasswordEncryption    : False                                                                                          
+AuthenticationPolicy                 : {}                                                                                             
+AuthenticationPolicySilo             : {}                                                                                             
+BadLogonCount                        : 37                                                                                             
+badPasswordTime                      : 132222997411927904                                                                             
+badPwdCount                          : 37                                                                                             
+CannotChangePassword                 : False                                                                                          
+CanonicalName                        : underthewire.tech/Users/Administrator                                                          
+Certificates                         : {}                                                                                             
+City                                 :                                                                                                
+CN                                   : Administrator                                                                                  
+codePage                             : 0                                                                                              
+Company                              :                                                                                                
+CompoundIdentitySupported            : {}                                                                                             
+Country                              :                                                                                                
+countryCode                          : 0                                                                                              
+Created                              : 8/30/2018 2:51:16 AM                                                                           
+createTimeStamp                      : 8/30/2018 2:51:16 AM                                                                           
+Deleted                              :                                                                                                
+Department                           :                                                                                                
+Description                          : Built-in account for administering the computer/domain                                         
+DisplayName                          :                                                                                                
+DistinguishedName                    : CN=Administrator,CN=Users,DC=underthewire,DC=tech                                              
+Division                             :                                                                                                
+DoesNotRequirePreAuth                : False                                                                                          
+dSCorePropagationData                : {8/30/2018 3:09:00 AM, 8/30/2018 3:08:59 AM, 8/30/2018 2:53:49 AM, 1/1/1601 6:12:16 PM}        
+EmailAddress                         :                                                                                                
+EmployeeID                           :                                                                                                
+EmployeeNumber                       :                                                                                                
+Enabled                              : True                                                                                           
+Fax                                  :                                                                                                
+GivenName                            :                                                                                                
+HomeDirectory                        :                                                                                                
+HomedirRequired                      : False                                                                                          
+HomeDrive                            :                                                                                                
+HomePage                             :                                                                                                
+HomePhone                            :                                                                                                
+Initials                             :                                                                                                
+instanceType                         : 4                                                                                              
+isCriticalSystemObject               : True                                                                                           
+isDeleted                            :                                                                                                
+KerberosEncryptionType               : {}                                                                                             
+LastBadPasswordAttempt               : 12/31/2019 9:02:21 PM                                                                          
+LastKnownParent                      :                                                                                                
+lastLogoff                           : 0                                                                                              
+lastLogon                            : 132209432232359036                                                                             
+LastLogonDate                        : 12/15/2019 7:09:22 PM                                                                          
+lastLogonTimestamp                   : 132209105625309034                                                                             
+LockedOut                            : False                                                                                          
+logonCount                           : 368                                                                                            
+logonHours                           : {255, 255, 255, 255...}                                                                        
+LogonWorkstations                    :                                                                                                
+Manager                              :                                                                                                
+MemberOf                             : {CN=Group Policy Creator Owners,CN=Users,DC=underthewire,DC=tech, CN=Domain                    
+                                       Admins,CN=Users,DC=underthewire,DC=tech, CN=Enterprise                                         
+                                       Admins,CN=Users,DC=underthewire,DC=tech, CN=Schema Admins,CN=Users,DC=underthewire,DC=tech...} 
+MNSLogonAccount                      : False                                                                                          
+MobilePhone                          :                                                                                                
+Modified                             : 12/15/2019 7:09:22 PM                                                                          
+modifyTimeStamp                      : 12/15/2019 7:09:22 PM                                                                          
+msDS-User-Account-Control-Computed   : 0                                                                                              
+Name                                 : Administrator                                                                                  
+nTSecurityDescriptor                 : System.DirectoryServices.ActiveDirectorySecurity                                               
+ObjectCategory                       : CN=Person,CN=Schema,CN=Configuration,DC=underthewire,DC=tech                                   
+ObjectClass                          : user                                                                                           
+ObjectGUID                           : 427058c2-1d57-4e49-a23d-204865b502ae                                                           
+objectSid                            : S-1-5-21-758131494-606461608-3556270690-500                                                    
+Office                               :                                                                                                
+OfficePhone                          :                                                                                                
+Organization                         :                                                                                                
+OtherName                            :                                                                                                
+PasswordExpired                      : False                                                                                          
+PasswordLastSet                      : 8/30/2018 2:41:02 AM                                                                           
+PasswordNeverExpires                 : False                                                                                          
+PasswordNotRequired                  : False                                                                                          
+POBox                                :                                                                                                
+PostalCode                           :                                                                                                
+PrimaryGroup                         : CN=Domain Users,CN=Users,DC=underthewire,DC=tech                                               
+primaryGroupID                       : 513                                                                                            
+PrincipalsAllowedToDelegateToAccount : {}                                                                                             
+ProfilePath                          :                                                                                                
+ProtectedFromAccidentalDeletion      : False                                                                                          
+pwdLastSet                           : 131800704624162195                                                                             
+SamAccountName                       : Administrator                                                                                  
+sAMAccountType                       : 805306368                                                                                      
+ScriptPath                           :                                                                                                
+sDRightsEffective                    : 0                                                                                              
+ServicePrincipalNames                : {}                                                                                             
+SID                                  : S-1-5-21-758131494-606461608-3556270690-500                                                    
+SIDHistory                           : {}                                                                                             
+SmartcardLogonRequired               : False                                                                                          
+State                                :                                                                                                
+StreetAddress                        :                                                                                                
+Surname                              :                                                                                                
+Title                                :                                                                                                
+TrustedForDelegation                 : False                                                                                          
+TrustedToAuthForDelegation           : False                                                                                          
+UseDESKeyOnly                        : False                                                                                          
+userAccountControl                   : 512                                                                                            
+userCertificate                      : {}                                                                                             
+UserPrincipalName                    :                                                                                                
+uSNChanged                           : 189363                                                                                         
+uSNCreated                           : 8196                                                                                           
+whenChanged                          : 12/15/2019 7:09:22 PM                                                                          
+whenCreated                          : 8/30/2018 2:51:16 AM  
+
+
+
+UserPrincipalName                    : Benny.Rowray                                                                                   
+
+
+PS C:\Users\cyborg5\documents> dir ..\Desktop                                                                                         
+                                                                                                                                      
+                                                                                                                                      
+    Directory: C:\Users\cyborg5\Desktop                                                                                               
+                                                                                                                                      
+                                                                                                                                      
+Mode                LastWriteTime         Length Name                                                                                 
+----                -------------         ------ ----                                                                                 
+-a----        8/30/2018  10:45 AM              0 _timer                                                                               
+                                                                                                                                      
+                                                                                                                                      
+PS C:\Users\cyborg5\documents>   
+
+rowray_timer

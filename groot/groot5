@@ -1,0 +1,35 @@
+PS C:\windows\System32> get-psdrive                                                                                                   
+                                                                                                                                      
+Name           Used (GB)     Free (GB) Provider      Root                                                             CurrentLocation 
+----           ---------     --------- --------      ----                                                             --------------- 
+Alias                                  Alias                                                                                          
+C                  26.75         22.91 FileSystem    C:\                                                             windows\System32 
+Cert                                   Certificate   \                                                                                
+Env                                    Environment                                                                                    
+Function                               Function                                                                                       
+HKCU                                   Registry      HKEY_CURRENT_USER                                                                
+HKLM                                   Registry      HKEY_LOCAL_MACHINE                                                               
+Variable                               Variable                                                                                       
+WSMan                                  WSMan                                                                                          
+                                                                                                                                      
+                                                                                                                                      
+PS C:\windows\System32>  Get-ChildItem -recurse -errorAction silentlycontinue -Path hkcu:\ | where-object {$_.name -like "*drax*"}    
+                                                                                                                                      
+                                                                                                                                      
+    Hive: HKEY_CURRENT_USER\Software\Microsoft\Assistance                                                                             
+                                                                                                                                      
+                                                                                                                                      
+Name                           Property                                                                                               
+----                           --------                                                                                               
+Drax                                                                                                                                  
+                                                                                                                                      
+                                                                                                                                      
+    Hive: HKEY_CURRENT_USER\Software\Microsoft\Assistance\Drax                                                                        
+                                                                                                                                      
+                                                                                                                                      
+Name                           Property                                                                                               
+----                           --------                                                                                               
+destroyer                                                                                                                             
+                                                                                                                                      
+                                                                                                                                      
+PS C:\windows\System32> 

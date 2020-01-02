@@ -1,0 +1,13 @@
+
+ ```The password for groot4 is the number of times the word "beetle" is listed in the file on the desktop.```
+
+
+#################################################################################################
+## The file was one big blob so somehow any grep we did returned the whole document
+## This trick came from the internet
+################################################################################################## 
+                                                                                                                                     
+PS C:\Users\Groot3\Desktop> $a = ( select-string -path ".\words.txt"  -pattern "beetle" -allmatches)                                  
+PS C:\Users\Groot3\Desktop> $a.matches.count                                                                                          
+5                                                                                                                                     
+PS C:\Users\Groot3\Desktop>  

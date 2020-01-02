@@ -1,0 +1,14 @@
+                                                                               
+PS C:\Users\cyborg7\AppData\Roaming\Microsoft\Windows> Get-WmiObject Win32_StartupCommand                                             
+                                                                                                                                      
+Command                            User                 Caption                                                                       
+-------                            ----                 -------                                                                       
+C:\program files\SkyNet\skynet.exe underthewire\cyborg7 SKYNET                                                                        
+                                                                                                                                      
+                                                                                                                                      
+PS C:\Users\cyborg7\AppData\Roaming\Microsoft\Windows>      
+
+
+
+
+literally had to google this

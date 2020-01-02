@@ -1,0 +1,14 @@
+```The password for groot3 is the word that is made up from the letters in the range of 1,481,110 to 1,481,117 within the file on the desktop. ```
+
+PS C:\Users\Groot2\Desktop> (get-content .\elements.txt  )[1481110..1481117]                                                          
+                                                                                                                                      
+h                                                                                                                                     
+i                                                                                                                                     
+d                                                                                                                                     
+i                                                                                                                                     
+n                                                                                                                                     
+g                                                                                                                                     
+ 
+PS C:\Users\Groot2\Desktop> (get-content .\elements.txt  )[1481110..1481117]-join" "                                                  
+  h i d i n g                                                                                                                         
+PS C:\Users\Groot2\Desktop>

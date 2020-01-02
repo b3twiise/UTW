@@ -1,0 +1,34 @@
+```The password for cyborg11 is the description of the Applocker Executable deny policy for ill_be_back.exe PLUS the name of the file on the desktop. ```
+
+PS C:\Users\cyborg10\documents> get-applockerpolicy -effective                                                                        
+                                                                                                                                      
+Version RuleCollections                                                                                                               
+------- ---------------                                                                                                               
+      1 {Microsoft.Security.ApplicationId.PolicyManagement.PolicyModel.RuleCollection, Microsoft.Security.ApplicationId.PolicyMana... 
+                                                                                                                                      
+                                                                                                                                      
+PS C:\Users\cyborg10\documents> get-applockerpolicy -effective -xml                                                                   
+<AppLockerPolicy Version="1"><RuleCollection Type="Appx" EnforcementMode="NotConfigured" /><RuleCollection Type="Dll" EnforcementMode=
+"NotConfigured" /><RuleCollection Type="Exe" EnforcementMode="NotConfigured"><FilePathRule Id="cf7f9744-e5de-4189-8499-236666a32796" N
+ame="C:\Users\cyborg10\Documents\ill_be_back.exe" Description="terminated!" UserOrGroupSid="S-1-1-0" Action="Deny"><Conditions><FilePa
+thCondition Path="C:\Users\cyborg10\Documents\ill_be_back.exe" /></Conditions></FilePathRule></RuleCollection><RuleCollection Type="Ms
+i" EnforcementMode="NotConfigured" /><RuleCollection Type="Script" EnforcementMode="NotConfigured" /></AppLockerPolicy>               
+PS C:\Users\cyborg10\documents>   
+
+
+Description="terminated!
+
+
+
+ Directory: C:\Users\cyborg10\Desktop                                                                                              
+                                                                                                                                      
+                                                                                                                                      
+Mode                LastWriteTime         Length Name                                                                                 
+----                -------------         ------ ----                                                                                 
+-a----        8/30/2018  10:45 AM              0 99                                                                                   
+                                                                                                                                      
+                                                                                                                                      
+PS C:\Users\cyborg10\documents>  
+
+
+terminated!99

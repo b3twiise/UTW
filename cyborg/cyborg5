@@ -1,0 +1,31 @@
+```The password for cyborg5 is the PowerShell module name with a version number of 8.9.8.9 PLUS the name of the file on the desktop```
+
+
+PS C:\Users\cyborg4\documents> dir ..\Desktop                                                                                         
+                                                                                                                                      
+                                                                                                                                      
+    Directory: C:\Users\cyborg4\Desktop                                                                                               
+                                                                                                                                      
+                                                                                                                                      
+Mode                LastWriteTime         Length Name                                                                                 
+----                -------------         ------ ----                                                                                 
+-a----        8/30/2018  10:45 AM              0 _eggs                                                                                
+                                                                                                                                      
+                                                                                                                                      
+PS C:\Users\cyborg4\documents>   
+
+
+PS C:\Users\cyborg4\documents> Get-Module -listavailable -all | where {$_."version" -like "8.9.8.9"}                                  
+                                                                                                                                      
+                                                                                                                                      
+    Directory: C:\Windows\system32\WindowsPowerShell\v1.0\Modules                                                                     
+                                                                                                                                      
+                                                                                                                                      
+ModuleType Version    Name                                ExportedCommands                                                            
+---------- -------    ----                                ----------------                                                            
+Manifest   8.9.8.9    bacon                               Get-bacon                                                                   
+                                                                                                                                      
+                                                                                                                                      
+PS C:\Users\cyborg4\documents> 
+
+bacon_eggs

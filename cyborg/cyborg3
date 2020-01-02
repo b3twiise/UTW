@@ -1,0 +1,34 @@
+``` The password for cyborg3 is the host A record IP address for CYBORG718W100N PLUS the name of the file on the desktop. ```
+
+spews a lot of info
+utw.underthewire.tech
+
+
+                                                                                                                                     
+PS C:\Users\cyborg2\documents> Get-DnsServerZone                                                                                      
+                                                                                                                                      
+ZoneName                            ZoneType        IsAutoCreated   IsDsIntegrated  IsReverseLookupZone  IsSigned                     
+--------                            --------        -------------   --------------  -------------------  --------                     
+_msdcs.underthewire.tech            Primary         False           True            False                False                        
+0.in-addr.arpa                      Primary         True            False           True                 False                        
+127.in-addr.arpa                    Primary         True            False           True                 False                        
+255.in-addr.arpa                    Primary         True            False           True                 False                        
+TrustAnchors                        Primary         False           True            False                False                        
+underthewire.tech                   Primary         False           True            False                False                        
+                                                                                                                                      
+                                                                                                                                      
+PS C:\Users\cyborg2\documents> Get-DnsServerResourceRecord -zonename "underthewire.tech" -name "CYBORG718W100N"                       
+                                                                                                                                      
+HostName                  RecordType Type       Timestamp            TimeToLive      RecordData                                       
+--------                  ---------- ----       ---------            ----------      ----------                                       
+CYBORG718W100N            A          1          0                    01:00:00        172.31.45.167                                    
+                                                                                                                                      
+                                                                                                                                          
+
+PS C:\Users\cyborg2\documents> (invoke-expression( "dir ..\Desktop")).name                                                            
+_ipv4 
+
+#Export-DnsServerZone
+#Get-DnsServerZone
+
+172.31.45.167_ipv4

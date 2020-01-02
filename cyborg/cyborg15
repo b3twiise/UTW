@@ -1,0 +1,23 @@
+
+
+
+PS C:\Users\cyborg14\documents> (Get-WmiObject -Class "Win32_DCOMApplication" -Filter "AppId='{59B8AFA0-229E-46D9-B980-DDA2C817EC7E}'"
+ ).Caption                                                                                                                            
+propshts 
+
+
+
+S C:\Users\cyborg14\documents> ls ../desktop                                                                                         
+                                                                                                                                      
+                                                                                                                                      
+    Directory: C:\Users\cyborg14\desktop                                                                                              
+                                                                                                                                      
+                                                                                                                                      
+Mode                LastWriteTime         Length Name                                                                                 
+----                -------------         ------ ----                                                                                 
+-a----        8/30/2018  10:45 AM              0 _objects                                                                             
+                                                                                                                                      
+                                                                                                                                      
+PS C:\Users\cyborg14\documents>       
+
+propshts_objects

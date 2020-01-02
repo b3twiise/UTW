@@ -1,0 +1,72 @@
+``` The password for cyborg9 is the Internet zone that the picture on the desktop was downloaded from. ```
+
+
+
+
+PS C:\Users\cyborg8> get-item -path .\Desktop\1_qs5nwlcl7f_-SwNlQvOrAw.png -stream *                                                  
+                                                                                                                                      
+                                                                                                                                      
+PSPath        : Microsoft.PowerShell.Core\FileSystem::C:\Users\cyborg8\Desktop\1_qs5nwlcl7f_-SwNlQvOrAw.png::$DATA                    
+PSParentPath  : Microsoft.PowerShell.Core\FileSystem::C:\Users\cyborg8\Desktop                                                        
+PSChildName   : 1_qs5nwlcl7f_-SwNlQvOrAw.png::$DATA                                                                                   
+PSDrive       : C                                                                                                                     
+PSProvider    : Microsoft.PowerShell.Core\FileSystem                                                                                  
+PSIsContainer : False                                                                                                                 
+FileName      : C:\Users\cyborg8\Desktop\1_qs5nwlcl7f_-SwNlQvOrAw.png                                                                 
+Stream        : :$DATA                                                                                                                
+Length        : 60113                                                                                                                 
+                                                                                                                                      
+PSPath        : Microsoft.PowerShell.Core\FileSystem::C:\Users\cyborg8\Desktop\1_qs5nwlcl7f_-SwNlQvOrAw.png:Zone.Identifier           
+PSParentPath  : Microsoft.PowerShell.Core\FileSystem::C:\Users\cyborg8\Desktop                                                        
+PSChildName   : 1_qs5nwlcl7f_-SwNlQvOrAw.png:Zone.Identifier                                                                          
+PSDrive       : C                                                                                                                     
+PSProvider    : Microsoft.PowerShell.Core\FileSystem                                                                                  
+PSIsContainer : False                                                                                                                 
+FileName      : C:\Users\cyborg8\Desktop\1_qs5nwlcl7f_-SwNlQvOrAw.png                                                                 
+Stream        : Zone.Identifier                                                                                                       
+Length        : 26                                                                                                                    
+                                                                                                                                      
+                                                                                                                                      
+                                                                                                                                      
+PS C:\Users\cyborg8> get-item -path .\Desktop\1_qs5nwlcl7f_-SwNlQvOrAw.png -stream zone.identifier                                    
+                                                                                                                                      
+                                                                                                                                      
+PSPath        : Microsoft.PowerShell.Core\FileSystem::C:\Users\cyborg8\Desktop\1_qs5nwlcl7f_-SwNlQvOrAw.png:Zone.Identifier           
+PSParentPath  : Microsoft.PowerShell.Core\FileSystem::C:\Users\cyborg8\Desktop                                                        
+PSChildName   : 1_qs5nwlcl7f_-SwNlQvOrAw.png:Zone.Identifier                                                                          
+PSDrive       : C                                                                                                                     
+PSProvider    : Microsoft.PowerShell.Core\FileSystem                                                                                  
+PSIsContainer : False                                                                                                                 
+FileName      : C:\Users\cyborg8\Desktop\1_qs5nwlcl7f_-SwNlQvOrAw.png                                                                 
+Stream        : Zone.Identifier                                                                                                       
+Length        : 26                                                                                                                    
+                                                                                                                                      
+                                                                                                                                      
+                                                                                                                                      
+PS C:\Users\cyborg8> get-content -path .\Desktop\1_qs5nwlcl7f_-SwNlQvOrAw.png -stream zone.identifier                                 
+[ZoneTransfer]                                                                                                                        
+ZoneId=4                                                                                                                              
+PS C:\Users\cyborg8> test-alternatedatastream                                                                                         
+test-alternatedatastream : The term 'test-alternatedatastream' is not recognized as the name of a cmdlet, function, script file, or   
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.           
+At line:1 char:1                                                                                                                      
++ test-alternatedatastream                                                                                                            
++ ~~~~~~~~~~~~~~~~~~~~~~~~                                                                                                            
+    + CategoryInfo          : ObjectNotFound: (test-alternatedatastream:String) [], CommandNotFoundException                          
+    + FullyQualifiedErrorId : CommandNotFoundException                                                                                
+                                                                                                                                      
+PS C:\Users\cyborg8>     
+
+
+ZoneId=4 
+zoneid=4
+
+
+security zones
+Value Setting
+——————————
+0     My Computer
+1     Local Intranet Zone
+2     Trusted sites Zone
+3     Internet Zone
+4     Restricted Sites Zone
